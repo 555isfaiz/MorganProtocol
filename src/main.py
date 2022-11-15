@@ -6,19 +6,19 @@ from CPPtemplate import *
 from CSharptemplate import *
 from ptcdef import Message
 
-path_ = "."
+path_ = "../MorganShootingServer/protocols/"
 
 protocols = []
 
 whiteList = ["MessageBase.java", "MessageSender.java", "MsgHandler.java", "MsgHandler.cs"]
 
-javaPath = "../morgan-shooting/src/main/java/morgan/messages/"
+javaPath = "../MorganShootingServer/src/main/java/morgan/messages/"
 
-cppPath = "../morgan-shooting/msg/"
+cppPath = "../MorganShootingServer/msg/"
 
-csharpPath = "../../../../unity/morgan-shooting/MorganClient/Assets/Scripts/connection/messages/"
+csharpPath = "../../MorganClient/Assets/Scripts/connection/messages/"
 
-genCpp = False
+genCpp = True
 
 if sys.argv.__len__() >= 2:
     path_ = sys.argv[1]
